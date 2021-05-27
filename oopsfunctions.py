@@ -4,9 +4,9 @@
 class bb:
 	b=2
 	def bb(self):
-		print(a.b)
+		print('b')
 print(bb().b)
-print(bb().bb())
+bb().bb()
 
 #Access, delete ,identyfy attributes by using functions
 class test:
