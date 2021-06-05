@@ -535,6 +535,76 @@ print(strr)
 
 
 
+#SET
+#1
+#[arn]
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[arn]",res)
+print(strr)
+
+#[^arn]
+
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[^arn]",res)
+print(strr)
+
+
+ #2
+#[a-n]
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[a-n]",res)
+print(strr)
+
+#[^a-n]
+
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[^a-n]",res)
+print(strr)
+
+
+#3
+#[012345],[1-5]
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[012345]",res)
+print(strr)
+
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[0-5]",res)
+print(strr)
+
+#4
+#[a-zA-Z],[a-zA-Z0-9_]
+import re
+res='my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[a-zA-Z]",res)
+print(strr)
+
+import re
+res='_ my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[a-zA-Z0-9_]",res)
+print(strr)
+
+
+#special characters except "
+#!@$%^&*()_+-={}|?><
+import re
+res='+my mobile number @# ^ is 9595959595 and we are friends '
+strr=re.findall("[+]",res)
+print(strr)
+
+import re
+res='_ my mobile number @# ^ is 9595959595  !&* and we are friends '
+strr=re.findall("[+!@#$%^&*(A){}|:<>?]",res)
+print(strr)
+
+
+
 
 
 
