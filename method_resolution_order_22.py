@@ -75,7 +75,7 @@ class G(B):
 class H(F,G):
  pass
     
-class I(H):
+class I(E,H):
   pass
     
     
